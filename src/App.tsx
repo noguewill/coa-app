@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState, useEffect } from "react";
+import Hero from "./components/Hero";
+import NavBar from "./components/NavBar";
+import Container from "./components/Container";
+import About from "./components/About";
+import Testimonial from "./components/Testimonal";
+import Eshop from "./components/Eshop";
+import Footer from "./components/Footer";
+import Nav from "./components/Nav";
 
-function App() {
+const App = () => {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const waitForHero = setTimeout(() => {
+      setActive(true);
+    }, 5000);
+
+    return () => {
+      clearTimeout(waitForHero);
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <NavBar active={active} /> */}
+      {/*    <Nav /> */}
+      <div className="w-full flex flex-col items-center justify-between">
+        <Hero active={active} />
+      </div>
+    </>
   );
-}
-
+};
 export default App;
+
+/*       
+        <About />
+        <Testimonial />
+        <Eshop />
+        <Footer /> */
