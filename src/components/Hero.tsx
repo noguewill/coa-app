@@ -1,4 +1,3 @@
-/* import Video from "../videos/praise.mp4"; */
 import Button from "./Button";
 /* import NavBar from "./NavBar"; */
 import Nav from "./Nav";
@@ -24,20 +23,21 @@ const Hero: React.FC<Props> = ({ active }) => {
       </video>
 
       <div
-        className={` absolute w-full h-full z-10 bg-black bg-opacity-10 ${
-          !active ? "invisible" : ""
-        }`}
+        className={` absolute w-full h-full z-10 bg-black bg-opacity-10 
+        ${!active ? "invisible" : ""}`}
       ></div>
       <div
         className=" w-full h-96  flex flex-col justify-center items-center 
         xl:items-baseline xl:h-11/12 xl:py-72"
       >
         <div
-          className={` flex flex-col justify-around w-8/12 z-20 text-augusta-white
+          className={` flex flex-col justify-around w-8/12 z-20 text-augusta-white 
           md:w-6/12 
           animate-rollRight
           xl:w-auto xl:h-auto 
           xl:ml-8 
+          mr-8
+          md:mr-3
           ${!active ? "hidden" : ""}`}
         >
           <h1 className="text-3xl xl:text-4xl ">BECOME WORTHY OF AUGUSTA</h1>
