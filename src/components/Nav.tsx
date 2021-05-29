@@ -31,29 +31,32 @@ const Nav = () => {
         </svg>
       </button>
       {/* ONLY SHOW AT LARGE SCREENS */}
-      <ul className="hidden text-augusta-white  w-96 xl:flex justify-between items-center border-b-2 border-solid border-augusta-white pb-1">
-        <li>
-          <button className="bg-augusta-red p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out ">
-            Home
-          </button>
-        </li>
-        <li>
-          <button className="p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out">
-            About
-          </button>
-        </li>
-        <li>
-          <button className="p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out">
-            Contact
-          </button>
-        </li>
-        <li>
-          <button className="p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out">
-            Sign In
-          </button>
-        </li>
-        <li className="invisible">Sign</li>
-      </ul>
+      <div className="hidden xl:block">
+        <ul className=" text-augusta-white  w-96 flex justify-between items-center pb-1">
+          <li className="navMenuItem  opacity-0">
+            <button className="bg-augusta-red p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out ">
+              Home
+            </button>
+          </li>
+          <li className="navMenuItem2 delay-6000 opacity-0">
+            <button className="p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out">
+              About
+            </button>
+          </li>
+          <li className="navMenuItem3 delay-7000  opacity-0">
+            <button className="p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out">
+              Contact
+            </button>
+          </li>
+          <li className="navMenuItem4 opacity-0">
+            <button className="p-1.5 rounded text-center hover:bg-augusta-blue  transition ease-in-out">
+              Sign In
+            </button>
+          </li>
+          <li className="invisible">Sign</li>
+        </ul>
+        <span className="navMenuItem_bottomBorder block w-0 h-0.5 bg-augusta-white "></span>
+      </div>
 
       {/* MOBILE MENU */}
       <div

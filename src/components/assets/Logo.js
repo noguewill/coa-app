@@ -4,6 +4,7 @@ const Logo = () => {
   return (
     <>
       <svg
+        className="animate-spin-slow"
         viewBox="0 0 256 230"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMinYMin meet"

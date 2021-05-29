@@ -1,0 +1,32 @@
+.navMenuItem_bottomBorder {
+  animation: scaleRight 1s forwards 5s ease-in;
+}
+.navMenuItem {
+  animation: lazyLoad 1s forwards 5s ease-in;
+}
+.navMenuItem2 {
+  animation: lazyLoad 1s forwards 5.1s ease-in;
+}
+
+.navMenuItem3 {
+  animation: lazyLoad 1s forwards 5.2s ease-in;
+}
+
+.navMenuItem4 {
+  animation: lazyLoad 1s forwards 5.3s ease-in;
+}
+
+.navMenuItem5 {
+  animation: lazyLoad 1s forwards 5.4s ease-in;
+}
+
+@keyframes scaleRight {
+  100% {
+    width: 24rem;
+  }
+}
+@keyframes lazyLoad {
+  100% {
+    opacity: 1;
+  }
+}
