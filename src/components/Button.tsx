@@ -1,7 +1,7 @@
 interface Props {
   text: string;
   width: string;
-  gridPos: string;
+  gridPos?: string;
 }
 
 const Button: React.FC<Props> = ({ text, width, gridPos }) => {

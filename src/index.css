@@ -1,23 +1,23 @@
 .navMenuItem_bottomBorder {
-  animation: scaleRight 1s forwards 5s ease-in;
+  animation: scaleRight 1s forwards 5s;
 }
 .navMenuItem {
-  animation: lazyLoad 1s forwards 5s ease-in;
+  animation: lazyLoad 1s forwards 5s;
 }
 .navMenuItem2 {
-  animation: lazyLoad 1s forwards 5.1s ease-in;
+  animation: lazyLoad 1s forwards 5.1s;
 }
 
 .navMenuItem3 {
-  animation: lazyLoad 1s forwards 5.2s ease-in;
+  animation: lazyLoad 1s forwards 5.2s;
 }
 
 .navMenuItem4 {
-  animation: lazyLoad 1s forwards 5.3s ease-in;
+  animation: lazyLoad 1s forwards 5.3s;
 }
 
 .navMenuItem5 {
-  animation: lazyLoad 1s forwards 5.4s ease-in;
+  animation: lazyLoad 1s forwards 5.4s;
 }
 
 @keyframes scaleRight {
@@ -29,4 +29,8 @@
   100% {
     opacity: 1;
   }
+}
+
+.iconTextCard_boxShadow {
+  box-shadow: 10px 10px 20px #d9d5c3, -10px -10px 20px #fffff3;
 }

@@ -1,15 +1,18 @@
 interface Props {
   order: string;
+  children: string;
 }
-const IconTextCard: React.FC<Props> = ({ order }) => {
+
+const IconTextCard: React.FC<Props> = ({ order, children }) => {
   return (
-    <div className="md:w-8/12 w-full h-2/4 flex justify-between items-center px-2 py-5 flex-grow">
-      <i className={`block bg-indigo-500 w-24 h-24 rounded-full ${order}`}></i>
-      <p className="w-8/12 ">
-        "But I must explain to you how all this mistaken idea of denouncing
-        pleasure and praising pain was born and I will give you a complete
-        account of the system".
-      </p>
+    <div
+      className={`bg-augusta-white w-3/4 h-full ${order} p-5 iconTextCard_boxShadow rounded-3xl
+     `}
+    >
+      <div className="flex flex-col items-center justify-center">
+        <i className={`bg-indigo-500 block w-24 h-24 rounded-full mb-10 `}></i>
+        <p className="text-center">{children}</p>
+      </div>
     </div>
   );
 };

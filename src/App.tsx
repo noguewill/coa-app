@@ -27,6 +27,7 @@ const App = () => {
       {/*    <Nav /> */}
       <div className="w-full flex flex-col items-center justify-between">
         <Hero active={active} />
+        <About />
       </div>
     </>
   );
@@ -34,7 +35,7 @@ const App = () => {
 export default App;
 
 /*       
-        <About />
+       
         <Testimonial />
         <Eshop />
         <Footer /> */

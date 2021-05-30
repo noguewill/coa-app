@@ -9,12 +9,12 @@ const Hero: React.FC<Props> = ({ active }) => {
   return (
     <>
       <Nav />
+
       <video
         autoPlay
         loop
         muted
-        className={`object-cover flex w-098 h-full z-0 absolute rounded rounded-l 
-        `}
+        className={`object-cover w-098 h-full absolute rounded`}
       >
         <source
           type="video/mp4"
@@ -26,8 +26,9 @@ const Hero: React.FC<Props> = ({ active }) => {
         className={` absolute w-full h-full z-10 bg-black bg-opacity-10 
         ${!active ? "invisible" : ""}`}
       ></div>
+
       <div
-        className=" w-full h-96  flex flex-col justify-center items-center 
+        className=" w-full h-screen flex flex-col justify-center items-center 
         xl:items-baseline xl:h-11/12 xl:py-72"
       >
         <div
